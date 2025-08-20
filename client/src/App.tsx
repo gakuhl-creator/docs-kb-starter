@@ -61,7 +61,7 @@ export default function App() {
           <textarea placeholder="Content (supports plain text)" value={content} onChange={e => setContent(e.target.value)} rows={6} />
           <input placeholder="Tags (comma separated)" value={tags} onChange={e => setTags(e.target.value)} />
           <div style={{ display: 'flex', gap: 8, alignItems: 'center' }}>
-            <button type="submit">Add Doc</button>
+            <button type="button">Add Doc</button>
             <span className="meta">Tip: add tags like \"setup, api, auth\"</span>
           </div>
         </form>

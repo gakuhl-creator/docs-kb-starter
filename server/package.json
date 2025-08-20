@@ -6,15 +6,19 @@
   "scripts": {
     "dev": "tsx src/server.ts",
     "build": "tsc -p .",
-    "start": "node dist/server.js"
+    "start": "node dist/server.js",
+    "test": "vitest",
+    "test:watch": "vitest --watch",
+    "test:ci": "vitest run --reporter=dot --coverage"
   },
   "dependencies": {
     "graphql": "^16.9.0",
     "graphql-yoga": "^5.7.0",
-    "nanoid": "^5.0.7"
+    "nanoid": "^5.0.7",
+    "vitest": "^3.2.4"
   },
   "devDependencies": {
-    "@types/node": "^22.5.1",
+    "@types/node": "^20",
     "@typescript-eslint/eslint-plugin": "^8.40.0",
     "@typescript-eslint/parser": "^8.40.0",
     "eslint": "^9.33.0",

@@ -19,6 +19,8 @@ npm run lint → check TS/Node code
 
 npm run format → auto-fix formatting
 
+npm run test  → test the server side code
+
 ## Client folder commands
 
 npm run dev → start Vite + React

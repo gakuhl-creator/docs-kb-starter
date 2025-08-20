@@ -12,6 +12,10 @@ export type DocPage = {
 
 const docs: DocPage[] = []
 
+export function __resetDocs() {
+  docs.length = 0
+}
+
 export const schema = createSchema({
   typeDefs: /* GraphQL */ `
     type DocPage {

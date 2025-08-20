@@ -13,6 +13,6 @@ const yoga = createYoga({
 
 const server = createServer(yoga)
 const PORT = process.env.PORT ? Number(process.env.PORT) : 4000
-server.listen(PORT, () => {
+server.listen(PORT, '0.0.0.0', () => {
   console.log(`\nGraphQL → http://localhost:${PORT}${yoga.graphqlEndpoint}`)
 })

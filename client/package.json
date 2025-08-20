@@ -8,17 +8,26 @@
     "build": "tsc -b && vite build",
     "preview": "vite preview",
     "lint:css": "stylelint \"src/**/*.css\"",
-    "format:css": "stylelint \"src/**/*.css\" --fix"
+    "format:css": "stylelint \"src/**/*.css\" --fix",
+    "test": "vitest",
+    "test:watch": "vitest --watch",
+    "test:ci": "vitest run --reporter=dot --coverage"
   },
   "dependencies": {
     "graphql": "^16.9.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "urql": "^4.2.1"
+    "urql": "^4.2.1",
+    "vitest": "^3.2.4",
+    "msw": "^2.10.5",
+    "jsdom": "^26.1.0"
   },
   "devDependencies": {
     "@eslint/css": "^0.10.0",
     "@graphql-eslint/eslint-plugin": "^4.4.0",
+    "@testing-library/jest-dom": "^6.7.0",
+    "@testing-library/user-event": "^14.6.1",
+    "@testing-library/react": "^16.3.0",
     "@types/react": "^18.3.4",
     "@types/react-dom": "^18.3.0",
     "@typescript-eslint/eslint-plugin": "^8.40.0",
